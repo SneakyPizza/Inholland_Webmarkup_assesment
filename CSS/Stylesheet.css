@@ -1,0 +1,110 @@
+/*
+Used Colors:
+#000000     :   BLACK
+#444444     :   LIGHT BLACK
+#707070     :   DARK GRAY
+#AAAAAA     :   LIGHT GRAY
+#F5F5F5     :   WHITE SMOKE
+#FFFFFF     :   WHITE
+#2699FB     :   LIGHT BLUE
+*/
+/* CSS Variables */
+:root {
+   /* #000000     :   BLACK */
+    --lightBlack: #444444;
+    --darkGray: #707070;
+    --lightGray: #AAAAAA;
+    --whiteSmoke: #F5F5F5;
+    --white: #FFFFFF;
+    --lightBlue: #2699FB;
+}
+
+body {
+    display: grid;
+    grid-gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 20px 20px;
+    background-color: #ffffff;
+}
+
+/* Header/Banner */
+header {
+    min-height: 400px;
+    width: 100%;
+    background-color: #707070;
+    text-align: center;
+
+}
+
+header > h1 {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header > p {
+    font-size: 20px;
+}
+
+/* Navigation */
+nav ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+nav ul a { 
+    background-color: var(--lightBlack);
+    display: block;
+    padding: 1.0em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--whiteSmoke);
+}
+
+nav ul a:hover {
+    background-color: red;
+    color: saddlebrown;
+}
+
+/* main content */
+.content {
+    background-color: var(--lightBlue);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        'content-box content-box aside-content'
+        'content-box content-box aside-content';
+}
+
+.content-box {
+    grid-area: content-box;
+}
+
+.content-aside {
+    grid-area: aside-content;
+}
+
+
+/* sections */
+/*#sports-grid {
+    width: 95%;
+    margin: auto;
+    grid-gap: 50px;
+    background-color: pink;
+}
+.sports-box {
+    background-color: purple;
+    text-align: center;
+}
+
+/* footer */ 
+footer {
+    text-align: center;
+}
