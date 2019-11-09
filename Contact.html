@@ -1,0 +1,54 @@
+<!DOCTYPE html5>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content=""/>
+        <meta name="keywords" content="teakwondo, mudo, jijutsu, vechtsport haarlem"/>
+        <meta name="author" content="Yornie Westink">
+
+        <link rel="stylesheet" type="text/css" href="./css/Stylesheet.css"/>
+        <title>Website title</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec pretium dolor, sit amet iaculis mauris. Duis nec ultrices enim. In ut vulputate dui. Suspendisse a urna mauris.</p>
+        </header> 
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="#">De omgeving</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Over ons</a></li>
+                <li><a id=current href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class=content-contact>
+            <h1>Contact</h1>
+            <p>Als u nog vragen of opmerkingen heeft kunt u deze acherlaten bij het formulier.</p>
+           <form action="http://witan.nl/inholland/testform.php" method="POST" name="contact-form">
+                <fieldset>
+                    <legend>Persoons gegevens:</legend>
+                    <select name="Aanhef" aria-placeholder="Aanhef">
+                        <option value="meneer" >Meneer</option>
+                        <option value="mevrouw">Mevrouw</option>
+                    </select>
+                  <input name="name" type="text" placeholder="Naam">
+                  <input name="email" type="email" placeholder="Emailadres">
+                </fieldset>
+                <fieldset>
+                    <textarea name="message" cols="30" rows="10"></textarea>
+                    <button type="submit" form="contact-form">Verstuur</button>
+                </fieldset>
+            
+           </form>
+        </section>
+
+        <footer>
+            <p>Yornie Westink, 613441 &copy; 2018</p>
+        </footer>
+    </body>
+</html>

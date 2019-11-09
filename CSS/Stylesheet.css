@@ -25,27 +25,41 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     padding: 0;
-    margin: 20px 20px;
-    background-color: #ffffff;
+    background-color: var(--lightGray);
 }
 
 /* Header/Banner */
 header {
     min-height: 400px;
+    max-height: 400px;
     width: 100%;
-    background-color: #707070;
-    text-align: center;
-
+    height: 400px;
+    z-index: 2;
 }
 
 header > h1 {
     font-size: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
+    z-index: 2;
+    position: relative;
+    text-align: center;
 }
 
 header > p {
     font-size: 20px;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+
+video {
+    z-index: -1;
+    position: absolute;
+    width: 99.15%;
+    float: left;
+    overflow: hidden;
+  
 }
 
 /* Navigation */
@@ -58,7 +72,7 @@ nav ul {
 }
 
 nav ul a { 
-    background-color: var(--lightBlack);
+    background-color: var(--darkGray);
     display: block;
     padding: 1.0em;
     text-decoration: none;
@@ -68,43 +82,47 @@ nav ul a {
     color: var(--whiteSmoke);
 }
 
-nav ul a:hover {
+nav ul a:hover, #current {
     background-color: red;
     color: saddlebrown;
 }
 
 /* main content */
-.content {
+.content-main {
     background-color: var(--lightBlue);
     display: grid;
     grid-gap: 20px;
     grid-template-areas: 
-        'content-box content-box aside-content'
-        'content-box content-box aside-content';
+        'content-box content-box aside-content aside-content'
+        'content-box content-box aside-content aside-content'
+        'box-img box-img aside-content aside-content'
 }
 
-.content-box {
+.content-main-box {
     grid-area: content-box;
+    float: left;
+    margin: 20px;
 }
 
-.content-aside {
+.content-main-aside {
     grid-area: aside-content;
+    margin-top: 20px;
+}
+.content-main-aside img {
+    margin: 10px 10px;
+    float: right;
 }
 
-
-/* sections */
-/*#sports-grid {
-    width: 95%;
-    margin: auto;
-    grid-gap: 50px;
-    background-color: pink;
-}
-.sports-box {
-    background-color: purple;
-    text-align: center;
+/*Contact content */
+input[type=text], input[type=email], select, textarea {
+    width: 90%;
+    padding: 12px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-/* footer */ 
 footer {
     text-align: center;
+    margin-top: 10px;
+    background-color: var(--darkGray);
 }

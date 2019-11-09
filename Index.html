@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
@@ -7,27 +7,30 @@
         <meta name="keywords" content="teakwondo, mudo, jijutsu, vechtsport haarlem"/>
         <meta name="author" content="Yornie Westink">
 
-        <link rel="stylesheet" type="text/css" href="./CSS/Stylesheet.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/Stylesheet.css"/>
         <title>Website title</title>
     </head>
 
     <body>
+        <video autoplay muted loop id="headerVideo">
+            <source src="video/RoyaltyFreeVideo.mp4" type="video/mp4">
+        </video>
         <header>
             <h1>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec pretium dolor, sit amet iaculis mauris. Duis nec ultrices enim. In ut vulputate dui. Suspendisse a urna mauris.</p>
         </header> 
-        <nav class="main-nav">
+        <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a id=current href="#">Home</a></li>
                 <li><a href="#">De omgeving</a></li>
-                <li><a href="#">Sport</a></li>
+                <li><a href="Sport.html">Sport</a></li>
                 <li><a href="#">Over ons</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
 
-        <section class=content>
-            <article class=content-box>
+        <section class=content-main>
+            <article class=content-main-box>
                 <h1>Main Content</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Fugiat architecto, explicabo error fuga possimus voluptates
@@ -50,13 +53,12 @@
             </article>
                     <!-- Sidebar with images with text-->
             <aside>
-                <article class=content-aside>
-                    <img src="https://source.unsplash.com/random/400x400" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, similique.</p>
-                </article>
-                <article class=content-aside>
-                     <img src="https://source.unsplash.com/random/400x401" alt="">
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, similique.</p>
+                <article class=content-main-aside>
+                    <img src="https://source.unsplash.com/random/350x350" alt="">
+                    <img src="https://source.unsplash.com/random/350x351" alt="">
+                    <img src="https://source.unsplash.com/random/350x352" alt="">
+                    <img src="https://source.unsplash.com/random/350x353" alt="">
+
                  </article>
              </aside>
         </section>

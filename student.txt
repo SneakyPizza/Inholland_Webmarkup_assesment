@@ -1,3 +1,4 @@
-Student: Yornie Westink
-Studentnummer:  613441
-Class:  Inf1sb
+Student name: Yornie Westink
+Student number:  613441
+Student class:  Inf1sb
+URL student GitHub repository: https://github.com/SneakyPizza/Inholland_Webmarkup_assesment
