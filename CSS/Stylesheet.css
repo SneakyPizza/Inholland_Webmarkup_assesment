@@ -8,6 +8,18 @@ Used Colors:
 #FFFFFF     :   WHITE
 #2699FB     :   LIGHT BLUE
 */
+
+/* Fonts */
+@font-face {    font-family: 'PTSans'; 
+                src: url('./fonts/PTSans-Regular.ttf'),
+                format('truetype'); } 
+@font-face {    font-family: 'Raleway';
+                src: url('fonts/Raleway-Regular.ttf'),
+                format('truetype'); }
+@font-face {    font-family: 'RobotoCondensed';
+                src: url('fonts/RobotoCondensed-Regular.ttf'),
+                format('truetype'); } 
+
 /* CSS Variables */
 :root {
    /* #000000     :   BLACK */
@@ -19,10 +31,11 @@ Used Colors:
     --lightBlue: #2699FB;
 }
 
+
 body {
     display: grid;
     grid-gap: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'PTSans', Arial, Helvetica, sans-serif;
     font-size: 16px;
     padding: 0;
     background-color: var(--lightGray);
@@ -53,10 +66,12 @@ header > h1 {
     position: relative;
     text-align: center;
     color: var(--whiteSmoke);
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 header > h2 {
     font-size: 4em;
+    font-family: 'RobotoCondensed', Arial, Helvetica, sans-serif;
     z-index: 2;
     position: relative;
     text-align: center;
@@ -80,10 +95,16 @@ header > img {
 
 }
 
+/* Main */
+.content-main-aside img {
+    width: 100%;
+    height: 45%;
+}
+
 
 
 /* Navigation */
-nav ul {
+nav > ul {
     display: grid;
     grid-gap: 10px;
     padding: 0;
@@ -103,8 +124,8 @@ nav ul a {
 }
 
 nav ul a:hover, #current {
-    background-color: red;
-    color: saddlebrown;
+    background-color: var(--lightBlue);
+    color: black;
 }
 
 /* main content */
@@ -124,6 +145,17 @@ nav ul a:hover, #current {
     margin: 20px;
 }
 
+.content-main-box > h1 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding-left: 10px;
+}
+
+.content-main-box > p {
+    font-family: 'PTSans', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
 .content-main-aside {
     grid-area: aside-content;
     margin-top: 20px;
@@ -131,6 +163,22 @@ nav ul a:hover, #current {
 .content-main-aside img {
     margin: 10px 10px;
     float: right;
+}
+
+/* Second Content */
+.content-main > h1 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    margin-left: 10px;
+}
+
+.content-second-aside {
+    grid-area: aside-content;
+}
+
+.content-second-aside img {
+    width: 95%;
+    height: 45%;
 }
 
 /*Contact content */
@@ -145,4 +193,25 @@ footer {
     text-align: center;
     margin-top: 10px;
     background-color: var(--darkGray);
+    position: relative;
 }
+
+/*Sport content*/
+table, td, th {
+    border: 1px solid var(--lightBlack);
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+td img {
+    width: 350px;
+    height: 350px;
+}
+
+td {
+    text-decoration: none;
+}
+
